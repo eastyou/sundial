@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sundial"
+version = "0.1.0"
+description = "水平日晷制作卡：按纬度计算时刻线，生成 A4 可打印、可裁剪组装的 HTML"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "eastyou" }]
+keywords = ["sundial", "gnomon", "astronomy", "print", "craft", "cli"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Environment :: Console",
+  "Topic :: Education",
+  "Topic :: Scientific/Engineering :: Astronomy",
+]
+
+[project.scripts]
+sundial = "sundial.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/eastyou/sundial"
+Source = "https://github.com/eastyou/sundial"
+
+[tool.setuptools]
+packages = ["sundial"]
